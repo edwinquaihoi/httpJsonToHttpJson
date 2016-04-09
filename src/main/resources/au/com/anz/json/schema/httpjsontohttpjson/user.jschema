@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://au.com.anz.json.schema",
+  "type": "object",
+  "title": "Root schema.",
+  "description": "An explanation about the puropose of this instance described by this schema.",
+  "name": "/",
+  "properties": {
+    "id": {
+      "id": "http://au.com.anz.json.schema/id",
+      "type": "integer",
+      "title": "Id schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "id"
+    },
+    "name": {
+      "id": "http://au.com.anz.json.schema/name",
+      "type": "string",
+      "title": "Name schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "name"
+    },
+    "username": {
+      "id": "http://au.com.anz.json.schema/username",
+      "type": "string",
+      "title": "Username schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "username"
+    },
+    "email": {
+      "id": "http://au.com.anz.json.schema/email",
+      "type": "string",
+      "title": "Email schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "email"
+    },
+    "address": {
+      "id": "http://au.com.anz.json.schema/address",
+      "type": "object",
+      "title": "Address schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "address",
+      "properties": {
+        "street": {
+          "id": "http://au.com.anz.json.schema/address/street",
+          "type": "string",
+          "title": "Street schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "street"
+        },
+        "suite": {
+          "id": "http://au.com.anz.json.schema/address/suite",
+          "type": "string",
+          "title": "Suite schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "suite"
+        },
+        "city": {
+          "id": "http://au.com.anz.json.schema/address/city",
+          "type": "string",
+          "title": "City schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "city"
+        },
+        "zipcode": {
+          "id": "http://au.com.anz.json.schema/address/zipcode",
+          "type": "string",
+          "title": "Zipcode schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "zipcode"
+        },
+        "geo": {
+          "id": "http://au.com.anz.json.schema/address/geo",
+          "type": "object",
+          "title": "Geo schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "geo",
+          "properties": {
+            "lat": {
+              "id": "http://au.com.anz.json.schema/address/geo/lat",
+              "type": "string",
+              "title": "Lat schema.",
+              "description": "An explanation about the puropose of this instance described by this schema.",
+              "name": "lat"
+            },
+            "lng": {
+              "id": "http://au.com.anz.json.schema/address/geo/lng",
+              "type": "string",
+              "title": "Lng schema.",
+              "description": "An explanation about the puropose of this instance described by this schema.",
+              "name": "lng"
+            }
+          }
+        }
+      }
+    },
+    "phone": {
+      "id": "http://au.com.anz.json.schema/phone",
+      "type": "string",
+      "title": "Phone schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "phone"
+    },
+    "website": {
+      "id": "http://au.com.anz.json.schema/website",
+      "type": "string",
+      "title": "Website schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "website"
+    },
+    "company": {
+      "id": "http://au.com.anz.json.schema/company",
+      "type": "object",
+      "title": "Company schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "company",
+      "properties": {
+        "name": {
+          "id": "http://au.com.anz.json.schema/company/name",
+          "type": "string",
+          "title": "Name schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "name"
+        },
+        "catchPhrase": {
+          "id": "http://au.com.anz.json.schema/company/catchPhrase",
+          "type": "string",
+          "title": "CatchPhrase schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "catchPhrase"
+        },
+        "bs": {
+          "id": "http://au.com.anz.json.schema/company/bs",
+          "type": "string",
+          "title": "Bs schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "bs"
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "username",
+    "email",
+    "address",
+    "phone",
+    "website",
+    "company"
+  ]
+}
