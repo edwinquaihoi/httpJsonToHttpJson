@@ -1,6 +1,7 @@
 package au.com.anz.iib.apps.httpjsontohttpjson;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.IOException;
 import java.util.List;
@@ -8,7 +9,6 @@ import java.util.List;
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Before;
 import org.junit.Test;
 
 import au.com.anz.json.schema.httpjsontohttpjson.Company;
