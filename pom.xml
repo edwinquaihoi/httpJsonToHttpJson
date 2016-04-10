@@ -6,17 +6,23 @@
 	<artifactId>httpJsonToHttpJson</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<log4j2.version>2.5</log4j2.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>au.com.anz.iib</groupId>
 			<artifactId>anz-iib-commons</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.4</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -28,6 +34,18 @@
 			<artifactId>gson</artifactId>
 			<version>2.6.2</version>
 			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j2.version}</version>
 		</dependency>
 
 	</dependencies>
