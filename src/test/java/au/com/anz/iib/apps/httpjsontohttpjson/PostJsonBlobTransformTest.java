@@ -14,6 +14,7 @@ import org.junit.Test;
 import au.com.anz.json.schema.httpjsontohttpjson.Company;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 
 public class PostJsonBlobTransformTest {
@@ -87,6 +88,18 @@ public class PostJsonBlobTransformTest {
 		gson = new Gson();
 		List<Company> companies = gson.fromJson(new String(transformJsonBlob), new TypeToken<List<Company>>(){}.getType());
 		
+		// assert list contains 1 company
+		assertEquals(0, companies.size());
+	}
+	
+	@Test(expected=JsonSyntaxException.class)
+	public void testNoArrayInput() {
+		byte[] jsonBlob = "{}".getBytes();
+		byte[] transformJsonBlob = postJsonBlobTransform.execute(jsonBlob);
+		
+		gson = new Gson();
+
+		List<Company> companies = gson.fromJson(new String(transformJsonBlob), new TypeToken<List<Company>>(){}.getType());
 		// assert list contains 1 company
 		assertEquals(0, companies.size());
 	}
